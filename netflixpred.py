@@ -8,7 +8,7 @@ from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import r2_score, mean_squared_error
 
 # Load data
-netflix = pd.read_csv(r"C:/MCA2/AIML/Project/NFLX.csv")
+netflix = pd.read_csv(r"NFLX.csv")
 
 if 'Adj Close' in netflix.columns:
     netflix.drop('Adj Close', axis=1, inplace=True)
